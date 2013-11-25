@@ -24,4 +24,11 @@ describe "Static pages" do
    		end
    	end
 
+   	describe "stats page" do
+   		it "should have the content 'stats'" do
+   			visit '/static_pages/stats'
+   			page.should have_content('stats')
+   		end
+   	end
+
 end
